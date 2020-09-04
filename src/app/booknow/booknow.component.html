@@ -1,0 +1,146 @@
+<div class="container-fluid">
+    <div class="row text-light justify-content-center align-items-center  bg-dark sticky-top"
+        style="height: 8vh; font-weight: bold;">
+        <div class="col-3 justify-content-start  d-flex " style="font-size: 20px;">
+            URBANCLAP</div>
+        <div class=" col-3 d-flex justify-content-center" style="font-weight:bold;"> </div>
+        <div class=" col-1 d-flex justify-content-center">
+            <a style="text-decoration:none; color: #f4f4f4;" routerLink="/home">Home </a>
+        </div>
+        <div class=" col-2 d-flex justify-content-center ">
+
+            <a style="text-decoration:none; color: #f4f4f4;">Confirm Booking</a>
+        </div>
+
+    </div>
+    <div class="row ">
+        <div class="col-2 " style="background:#f4f4f4;"></div>
+        <div class="col-12 col-md-8 ">
+            <div class="row" style="height: 84vh;">
+                <div class="col-12 col-md-6 text-dark d-flex justify-content-center align-items-center " style="font-size: 40px;text-align: center; ; font-weight: bold;
+                    background:url(assets/img/UrbanClap_Logo.png) center no-repeat ;background-size: cover;">
+                </div>
+                <div class="col-12 col-md-6  ">
+                    <div class="row flex-column justify-content-center align-items-center" [formGroup]="fbFormGroup">
+                        <div class="col mt-3 d-flex flex-column text-info justify-content-center align-items-center"
+                            style="font-size: 30px;">Booking Details </div>
+                        <div class="col d-flex flex-column  justify-content-center align-items-center "
+                            style="font-size: 16px;">
+                            Please Confirm your Booking</div>
+
+                        <div class="col  pb-1 d-flex flex-column  ">
+                            <div style="font-size: 16px;">Name:</div>
+                            <div class=" mt-1 pr-4">
+                                <div class="input-group mb-3 mr-5">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="Name"
+                                        formControlName="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  pb-1 d-flex flex-column  ">
+                            <div style="font-size: 16px;">Email:</div>
+                            <div class=" mt-1 pr-4">
+                                <div class="input-group mb-3 mr-5">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                class="bi bi-envelope-open" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="Email"
+                                        formControlName="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  pb-1 d-flex flex-column  ">
+                            <div style="font-size: 16px;">Mobile:</div>
+                            <div class=" mt-1 pr-4">
+                                <div class="input-group mb-3 mr-5">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="mobile no"
+                                        formControlName="mobile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   d-flex flex-column  ">
+                            <div style="font-size: 16px;">Location:</div>
+                            <div class="mt-1 mb-3 pr-4">
+                                <div class="input-group mb-3 mr-5">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="eg.Mumbai"
+                                        formControlName="location">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  d-flex flex-column  ">
+                            <div style="font-size: 16px;">Service:</div>
+                            <div class="mt-1 mb-3 pr-4">
+                                <div class="input-group mb-3 mr-5">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default"
+                                        placeholder="eg.Spa,salon,Trainer,Electrician" formControlName="service">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column  ">
+
+                            <button class="btn btn-info  ml-5 mr-5" [disabled]="!fbFormGroup.valid" (click)="booknow()">
+                                Book Now </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2" style="background:#f4f4f4;"></div>
+    </div>
+    <div class="row bg-dark justify-content-center align-items-center text-light" style="height: 8vh;">
+        Urban Company 2020, All Right Reserved
+    </div>
+</div>

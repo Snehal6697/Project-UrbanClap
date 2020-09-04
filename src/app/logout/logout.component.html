@@ -1,0 +1,17 @@
+<div class="modal-content">
+    <div class="modal-header bg-dark">
+        <h5 class="modal-title text-light ">Confirm Logout</h5>
+        <button type="button" class="close" class="close" (click)="activeModal.dismiss('Cross click')"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body text-dark">
+        <p style="
+        font-size:16px">Do you want to Logout?</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-info" (click)="logout()">logout</button>
+        <button type="button" class="btn btn-secondary" (click)="closeTheModal()">Close</button>
+    </div>
+</div>
